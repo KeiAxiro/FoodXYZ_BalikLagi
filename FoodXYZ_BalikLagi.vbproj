@@ -93,6 +93,12 @@
     <Compile Include="FormGudang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_Kasir.Designer.vb">
+      <DependentUpon>Form_Kasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModuleUniverse.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -133,6 +139,12 @@
     <Compile Include="UserControl_Gudang_KelolaBarang.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UserControl_Kasir_KelolaTransaksi.Designer.vb">
+      <DependentUpon>UserControl_Kasir_KelolaTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Kasir_KelolaTransaksi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -143,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGudang.resx">
       <DependentUpon>FormGudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kasir.resx">
+      <DependentUpon>Form_Kasir.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -161,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Gudang_KelolaBarang.resx">
       <DependentUpon>UserControl_Gudang_KelolaBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Kasir_KelolaTransaksi.resx">
+      <DependentUpon>UserControl_Kasir_KelolaTransaksi.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

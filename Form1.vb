@@ -19,7 +19,8 @@
                 FormGudang.Show()
                 Me.Hide()
             ElseIf Srd.Item("tipe_user").Equals("KASIR") Then
-                MsgBox("njd")
+                Form_Kasir.Show()
+                Me.Hide()
             Else
                 MsgBox("Terjadi Kesalahan", vbOKOnly, "Warning")
             End If
@@ -45,4 +46,18 @@
         Label_Validation.Text = "Berhasil Di Reset"
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        FormGudang.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button_KelolaUser_Tambah_Click(sender As Object, e As EventArgs) Handles Button_KelolaUser_Tambah.Click
+        FormAdmin.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Form_Kasir.Show()
+        Me.Hide()
+    End Sub
 End Class

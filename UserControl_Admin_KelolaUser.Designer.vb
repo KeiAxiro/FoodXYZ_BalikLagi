@@ -24,6 +24,10 @@ Partial Class UserControl_Admin_KelolaUser
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TextBox_Password = New System.Windows.Forms.TextBox()
+        Me.TextBox_Telepon = New System.Windows.Forms.TextBox()
+        Me.TextBox_Username = New System.Windows.Forms.TextBox()
+        Me.TextBox_Alamat = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -32,24 +36,20 @@ Partial Class UserControl_Admin_KelolaUser
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ComboBox_TipeUser = New System.Windows.Forms.ComboBox()
         Me.TextBox_Nama = New System.Windows.Forms.TextBox()
-        Me.TextBox_Alamat = New System.Windows.Forms.TextBox()
-        Me.TextBox_Username = New System.Windows.Forms.TextBox()
-        Me.TextBox_Telepon = New System.Windows.Forms.TextBox()
-        Me.TextBox_Password = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Button_KelolaUser_Tambah = New System.Windows.Forms.Button()
-        Me.Button_KelolaUser_Edit = New System.Windows.Forms.Button()
-        Me.Button_KelolaUser_Hapus = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox_Cari = New System.Windows.Forms.TextBox()
         Me.DataGridView_KelolaUser = New System.Windows.Forms.DataGridView()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox_Cari = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Button_KelolaUser_Hapus = New System.Windows.Forms.Button()
+        Me.Button_KelolaUser_Edit = New System.Windows.Forms.Button()
+        Me.Button_KelolaUser_Tambah = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.DataGridView_KelolaUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -95,6 +95,46 @@ Partial Class UserControl_Admin_KelolaUser
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.31502!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(736, 186)
         Me.TableLayoutPanel1.TabIndex = 2
+        '
+        'TextBox_Password
+        '
+        Me.TextBox_Password.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox_Password.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Password.Location = New System.Drawing.Point(373, 154)
+        Me.TextBox_Password.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox_Password.Name = "TextBox_Password"
+        Me.TextBox_Password.Size = New System.Drawing.Size(358, 25)
+        Me.TextBox_Password.TabIndex = 11
+        '
+        'TextBox_Telepon
+        '
+        Me.TextBox_Telepon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox_Telepon.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Telepon.Location = New System.Drawing.Point(5, 154)
+        Me.TextBox_Telepon.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox_Telepon.Name = "TextBox_Telepon"
+        Me.TextBox_Telepon.Size = New System.Drawing.Size(358, 25)
+        Me.TextBox_Telepon.TabIndex = 10
+        '
+        'TextBox_Username
+        '
+        Me.TextBox_Username.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox_Username.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Username.Location = New System.Drawing.Point(373, 93)
+        Me.TextBox_Username.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox_Username.Name = "TextBox_Username"
+        Me.TextBox_Username.Size = New System.Drawing.Size(358, 25)
+        Me.TextBox_Username.TabIndex = 9
+        '
+        'TextBox_Alamat
+        '
+        Me.TextBox_Alamat.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox_Alamat.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Alamat.Location = New System.Drawing.Point(373, 32)
+        Me.TextBox_Alamat.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox_Alamat.Name = "TextBox_Alamat"
+        Me.TextBox_Alamat.Size = New System.Drawing.Size(358, 25)
+        Me.TextBox_Alamat.TabIndex = 8
         '
         'Label2
         '
@@ -177,46 +217,6 @@ Partial Class UserControl_Admin_KelolaUser
         Me.TextBox_Nama.Size = New System.Drawing.Size(358, 25)
         Me.TextBox_Nama.TabIndex = 7
         '
-        'TextBox_Alamat
-        '
-        Me.TextBox_Alamat.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox_Alamat.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_Alamat.Location = New System.Drawing.Point(373, 32)
-        Me.TextBox_Alamat.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox_Alamat.Name = "TextBox_Alamat"
-        Me.TextBox_Alamat.Size = New System.Drawing.Size(358, 25)
-        Me.TextBox_Alamat.TabIndex = 8
-        '
-        'TextBox_Username
-        '
-        Me.TextBox_Username.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox_Username.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_Username.Location = New System.Drawing.Point(373, 93)
-        Me.TextBox_Username.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox_Username.Name = "TextBox_Username"
-        Me.TextBox_Username.Size = New System.Drawing.Size(358, 25)
-        Me.TextBox_Username.TabIndex = 9
-        '
-        'TextBox_Telepon
-        '
-        Me.TextBox_Telepon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox_Telepon.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_Telepon.Location = New System.Drawing.Point(5, 154)
-        Me.TextBox_Telepon.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox_Telepon.Name = "TextBox_Telepon"
-        Me.TextBox_Telepon.Size = New System.Drawing.Size(358, 25)
-        Me.TextBox_Telepon.TabIndex = 10
-        '
-        'TextBox_Password
-        '
-        Me.TextBox_Password.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox_Password.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_Password.Location = New System.Drawing.Point(373, 154)
-        Me.TextBox_Password.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox_Password.Name = "TextBox_Password"
-        Me.TextBox_Password.Size = New System.Drawing.Size(358, 25)
-        Me.TextBox_Password.TabIndex = 11
-        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.DataGridView_KelolaUser)
@@ -228,6 +228,48 @@ Partial Class UserControl_Admin_KelolaUser
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(753, 439)
         Me.Panel1.TabIndex = 3
+        '
+        'DataGridView_KelolaUser
+        '
+        Me.DataGridView_KelolaUser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView_KelolaUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_KelolaUser.Location = New System.Drawing.Point(10, 276)
+        Me.DataGridView_KelolaUser.Name = "DataGridView_KelolaUser"
+        Me.DataGridView_KelolaUser.Size = New System.Drawing.Size(734, 154)
+        Me.DataGridView_KelolaUser.TabIndex = 5
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.TextBox_Cari)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Location = New System.Drawing.Point(10, 242)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(462, 28)
+        Me.Panel2.TabIndex = 4
+        '
+        'TextBox_Cari
+        '
+        Me.TextBox_Cari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox_Cari.Dock = System.Windows.Forms.DockStyle.Left
+        Me.TextBox_Cari.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Cari.Location = New System.Drawing.Point(85, 0)
+        Me.TextBox_Cari.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox_Cari.Name = "TextBox_Cari"
+        Me.TextBox_Cari.Size = New System.Drawing.Size(377, 25)
+        Me.TextBox_Cari.TabIndex = 8
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label8.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(0, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(85, 23)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Cari User"
         '
         'TableLayoutPanel2
         '
@@ -246,19 +288,19 @@ Partial Class UserControl_Admin_KelolaUser
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(464, 36)
         Me.TableLayoutPanel2.TabIndex = 3
         '
-        'Button_KelolaUser_Tambah
+        'Button_KelolaUser_Hapus
         '
-        Me.Button_KelolaUser_Tambah.BackColor = System.Drawing.Color.LightBlue
-        Me.Button_KelolaUser_Tambah.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button_KelolaUser_Tambah.FlatAppearance.BorderSize = 0
-        Me.Button_KelolaUser_Tambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_KelolaUser_Tambah.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_KelolaUser_Tambah.Location = New System.Drawing.Point(3, 3)
-        Me.Button_KelolaUser_Tambah.Name = "Button_KelolaUser_Tambah"
-        Me.Button_KelolaUser_Tambah.Size = New System.Drawing.Size(148, 30)
-        Me.Button_KelolaUser_Tambah.TabIndex = 4
-        Me.Button_KelolaUser_Tambah.Text = "Tambah"
-        Me.Button_KelolaUser_Tambah.UseVisualStyleBackColor = False
+        Me.Button_KelolaUser_Hapus.BackColor = System.Drawing.Color.LightBlue
+        Me.Button_KelolaUser_Hapus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button_KelolaUser_Hapus.FlatAppearance.BorderSize = 0
+        Me.Button_KelolaUser_Hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_KelolaUser_Hapus.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Hapus.Location = New System.Drawing.Point(311, 3)
+        Me.Button_KelolaUser_Hapus.Name = "Button_KelolaUser_Hapus"
+        Me.Button_KelolaUser_Hapus.Size = New System.Drawing.Size(150, 30)
+        Me.Button_KelolaUser_Hapus.TabIndex = 6
+        Me.Button_KelolaUser_Hapus.Text = "Hapus"
+        Me.Button_KelolaUser_Hapus.UseVisualStyleBackColor = False
         '
         'Button_KelolaUser_Edit
         '
@@ -274,61 +316,19 @@ Partial Class UserControl_Admin_KelolaUser
         Me.Button_KelolaUser_Edit.Text = "Edit"
         Me.Button_KelolaUser_Edit.UseVisualStyleBackColor = False
         '
-        'Button_KelolaUser_Hapus
+        'Button_KelolaUser_Tambah
         '
-        Me.Button_KelolaUser_Hapus.BackColor = System.Drawing.Color.LightBlue
-        Me.Button_KelolaUser_Hapus.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button_KelolaUser_Hapus.FlatAppearance.BorderSize = 0
-        Me.Button_KelolaUser_Hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_KelolaUser_Hapus.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_KelolaUser_Hapus.Location = New System.Drawing.Point(311, 3)
-        Me.Button_KelolaUser_Hapus.Name = "Button_KelolaUser_Hapus"
-        Me.Button_KelolaUser_Hapus.Size = New System.Drawing.Size(150, 30)
-        Me.Button_KelolaUser_Hapus.TabIndex = 6
-        Me.Button_KelolaUser_Hapus.Text = "Hapus"
-        Me.Button_KelolaUser_Hapus.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.TextBox_Cari)
-        Me.Panel2.Controls.Add(Me.Label8)
-        Me.Panel2.Location = New System.Drawing.Point(10, 242)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(462, 28)
-        Me.Panel2.TabIndex = 4
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label8.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(0, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(85, 23)
-        Me.Label8.TabIndex = 1
-        Me.Label8.Text = "Cari User"
-        '
-        'TextBox_Cari
-        '
-        Me.TextBox_Cari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox_Cari.Dock = System.Windows.Forms.DockStyle.Left
-        Me.TextBox_Cari.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_Cari.Location = New System.Drawing.Point(85, 0)
-        Me.TextBox_Cari.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox_Cari.Name = "TextBox_Cari"
-        Me.TextBox_Cari.Size = New System.Drawing.Size(377, 25)
-        Me.TextBox_Cari.TabIndex = 8
-        '
-        'DataGridView_KelolaUser
-        '
-        Me.DataGridView_KelolaUser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView_KelolaUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_KelolaUser.Location = New System.Drawing.Point(10, 276)
-        Me.DataGridView_KelolaUser.Name = "DataGridView_KelolaUser"
-        Me.DataGridView_KelolaUser.Size = New System.Drawing.Size(734, 154)
-        Me.DataGridView_KelolaUser.TabIndex = 5
+        Me.Button_KelolaUser_Tambah.BackColor = System.Drawing.Color.LightBlue
+        Me.Button_KelolaUser_Tambah.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button_KelolaUser_Tambah.FlatAppearance.BorderSize = 0
+        Me.Button_KelolaUser_Tambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_KelolaUser_Tambah.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Tambah.Location = New System.Drawing.Point(3, 3)
+        Me.Button_KelolaUser_Tambah.Name = "Button_KelolaUser_Tambah"
+        Me.Button_KelolaUser_Tambah.Size = New System.Drawing.Size(148, 30)
+        Me.Button_KelolaUser_Tambah.TabIndex = 4
+        Me.Button_KelolaUser_Tambah.Text = "Tambah"
+        Me.Button_KelolaUser_Tambah.UseVisualStyleBackColor = False
         '
         'UserControl_Admin_KelolaUser
         '
@@ -343,10 +343,10 @@ Partial Class UserControl_Admin_KelolaUser
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
+        CType(Me.DataGridView_KelolaUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DataGridView_KelolaUser, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

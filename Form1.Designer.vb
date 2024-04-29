@@ -37,6 +37,9 @@ Partial Class Form1
         Me.Button_Login = New System.Windows.Forms.Button()
         Me.Label_Validation = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button_KelolaUser_Tambah = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel_Login.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel_Password.SuspendLayout()
@@ -208,7 +211,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = Global.FoodXYZ_BalikLagi.My.Resources.Resources.Logo_Kasir
+        Me.PictureBox1.Image = Global.FoodXYZ_BalikLagi.My.Resources.Resources.Logo_Market
         Me.PictureBox1.Location = New System.Drawing.Point(263, 43)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
@@ -216,11 +219,56 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.LightBlue
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(352, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(148, 30)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "GUDANG"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button_KelolaUser_Tambah
+        '
+        Me.Button_KelolaUser_Tambah.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button_KelolaUser_Tambah.BackColor = System.Drawing.Color.LightBlue
+        Me.Button_KelolaUser_Tambah.FlatAppearance.BorderSize = 0
+        Me.Button_KelolaUser_Tambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_KelolaUser_Tambah.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Tambah.Location = New System.Drawing.Point(198, 4)
+        Me.Button_KelolaUser_Tambah.Name = "Button_KelolaUser_Tambah"
+        Me.Button_KelolaUser_Tambah.Size = New System.Drawing.Size(148, 30)
+        Me.Button_KelolaUser_Tambah.TabIndex = 13
+        Me.Button_KelolaUser_Tambah.Text = "ADMIN"
+        Me.Button_KelolaUser_Tambah.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.BackColor = System.Drawing.Color.LightBlue
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(504, 4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(148, 30)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "KASR"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(684, 461)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button_KelolaUser_Tambah)
         Me.Controls.Add(Me.Label_Validation)
         Me.Controls.Add(Me.Panel_Login)
         Me.Controls.Add(Me.Label1)
@@ -257,4 +305,7 @@ Partial Class Form1
     Friend WithEvents Label_Validation As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button_KelolaUser_Tambah As Button
+    Friend WithEvents Button2 As Button
 End Class

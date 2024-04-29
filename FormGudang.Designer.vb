@@ -43,7 +43,7 @@ Partial Class FormGudang
         Me.Panel_GudangParent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_GudangParent.Location = New System.Drawing.Point(0, 0)
         Me.Panel_GudangParent.Name = "Panel_GudangParent"
-        Me.Panel_GudangParent.Size = New System.Drawing.Size(562, 450)
+        Me.Panel_GudangParent.Size = New System.Drawing.Size(702, 466)
         Me.Panel_GudangParent.TabIndex = 0
         '
         'SplitContainer1
@@ -61,7 +61,7 @@ Partial Class FormGudang
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.Panel_GudangParent)
-        Me.SplitContainer1.Size = New System.Drawing.Size(800, 450)
+        Me.SplitContainer1.Size = New System.Drawing.Size(940, 466)
         Me.SplitContainer1.SplitterDistance = 234
         Me.SplitContainer1.TabIndex = 1
         '
@@ -75,7 +75,7 @@ Partial Class FormGudang
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(234, 450)
+        Me.Panel1.Size = New System.Drawing.Size(234, 466)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -83,11 +83,11 @@ Partial Class FormGudang
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(54, 264)
+        Me.Label1.Location = New System.Drawing.Point(52, 264)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(131, 66)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "KELOLA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "BARANG"
+        Me.Label1.Text = "KELOLA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "BARANG" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button_Gudang_Logout
@@ -109,11 +109,11 @@ Partial Class FormGudang
         Me.Label_Gudang.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label_Gudang.AutoSize = True
         Me.Label_Gudang.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_Gudang.Location = New System.Drawing.Point(60, 20)
+        Me.Label_Gudang.Location = New System.Drawing.Point(52, 20)
         Me.Label_Gudang.Name = "Label_Gudang"
-        Me.Label_Gudang.Size = New System.Drawing.Size(119, 33)
+        Me.Label_Gudang.Size = New System.Drawing.Size(134, 33)
         Me.Label_Gudang.TabIndex = 1
-        Me.Label_Gudang.Text = "Gudang"
+        Me.Label_Gudang.Text = "GUDANG"
         '
         'PictureBox1
         '
@@ -130,9 +130,11 @@ Partial Class FormGudang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(940, 466)
         Me.Controls.Add(Me.SplitContainer1)
+        Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(900, 505)
         Me.Name = "FormGudang"
         Me.Text = "Food XYZ | Form Gudang"
         Me.SplitContainer1.Panel1.ResumeLayout(False)

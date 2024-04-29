@@ -119,11 +119,11 @@ Partial Class FormAdmin
         Me.Label_Admin.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label_Admin.AutoSize = True
         Me.Label_Admin.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_Admin.Location = New System.Drawing.Point(68, 19)
+        Me.Label_Admin.Location = New System.Drawing.Point(64, 19)
         Me.Label_Admin.Name = "Label_Admin"
-        Me.Label_Admin.Size = New System.Drawing.Size(101, 33)
+        Me.Label_Admin.Size = New System.Drawing.Size(111, 33)
         Me.Label_Admin.TabIndex = 1
-        Me.Label_Admin.Text = "Admin"
+        Me.Label_Admin.Text = "ADMIN"
         '
         'Panel_AdminParent
         '
